@@ -13,12 +13,16 @@
 header{
     height: 100vh;
     width: 100%;
-    background-image: url("./marketing/Color.png");
+    background-image: url("./marketing/Background-icons.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 106% 100%;
     position: relative;
 }
 
 #navbar{
     position: relative;
+    z-index: 2;
     margin: auto;
     top: 5rem;
     width: 93%;
@@ -80,10 +84,11 @@ header{
     height: 3em;
     border-radius: 20em;
     background-color: #fdc11f;
+    padding-left: 2rem;
     border: none;
+
 }
 #navbar #search-bar>input::placeholder{
-    padding-left: 2rem;
     font-size: 1.3rem;
 }
  #navbar #circle{
@@ -99,3 +104,127 @@ header{
  #navbar #circle>i{
     font-size: 2rem;
  }
+
+
+ /* inner side */
+
+ #inner-header{
+    height: 80%;
+    margin-top: 7rem;
+    z-index: 1;
+    top: 7rem;
+    display: flex;
+
+ }
+
+ #inner-header .left-side,.right-side{
+    height: 100%;
+    width: 50%;
+ }
+
+ #inner-header .left-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+ #inner-header .left-side #buttons{
+    margin-block: 3.5rem;
+
+ }
+ #inner-header .left-side #buttons .btn{
+    padding: 1rem 4rem 1rem 4rem;
+    border-radius: 10rem;
+    outline: none;
+    border: 0.1rem solid #fdc11f;
+    background-color: transparent;
+    color: #fdc11f;
+    margin: 0 1rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.01rem;
+ }
+ #inner-header .left-side #buttons #login{
+    padding: 1rem 4.5rem 1rem 4.5rem;
+    background-color: #fdc11f;
+    color: #1f364b;
+    outline: none;
+ }
+ #inner-header .left-side>h1{
+    font-size: 8.0rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    line-height: 8rem;
+    color: #ffffff;
+
+ }
+ #inner-header .left-side>h1>span{
+    color: #fdc11f;
+
+ }
+
+ #inner-header .left-side #para{
+     width: 69%;
+     text-align: center;
+     font-family: 'Poppins', sans-serif;
+     margin-top: 3rem;
+     font-size: 1.3rem;
+     line-height: 2rem;
+     color: #ffffff;
+    }
+#inner-header .left-side #social-icons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#inner-header .left-side #social-icons .icons{
+   width: 3rem;
+   height: 3rem;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+   border-radius: 10rem;
+   background-color: #fdc11f;
+   margin-right: 1rem;
+}
+#inner-header .left-side #social-icons .icons>i{
+    font-size: 2rem;
+    color: #1f364b;
+        
+ }
+
+
+ /* Right side Design */
+
+ #inner-header .right-side{
+    position: relative;
+ }
+
+ #inner-header .right-side #back-color{
+    position: absolute;
+    width: 76%;
+    /* height: 70vh; */
+    top: 4%;
+    left: 6%;
+    
+ }
+
+ #inner-header .right-side #eclipse-border{
+    position: absolute;
+    width: 67%;
+    top: 15%;
+    left:8.5% ;
+    z-index: 2;
+ }
+ #inner-header .right-side #main-image-eclipse{
+    position: absolute;
+    z-index: 3;
+    width: 87%;
+    top: 7%;
+    left: 0.5%;
+ }
+
